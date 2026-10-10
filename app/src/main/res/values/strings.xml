@@ -1,0 +1,169 @@
+<resources>
+    <string name="app_name">AI Reply Assist</string>
+    <string name="notification_service_label">AI Reply Notification Monitor</string>
+    <string name="foreground_service_title">AI Reply Assist Running</string>
+    <string name="foreground_service_desc">Actively monitoring notifications and ready to generate smart responses.</string>
+
+    <!-- Navigation -->
+    <string name="nav_dashboard">Dashboard</string>
+    <string name="nav_threads">Threads</string>
+    <string name="nav_blacklist">Blacklist</string>
+    <string name="nav_ai_behavior">AI Behavior</string>
+    <string name="nav_settings">Settings</string>
+    <string name="nav_help">Help</string>
+
+    <!-- Dashboard -->
+    <string name="dashboard_hero_subtitle">Background Active</string>
+    <string name="section_system_services">System &amp; Service Status</string>
+    <string name="status_listener_title">Notification Listener Service</string>
+    <string name="status_listener_active">Active • Capturing incoming messages</string>
+    <string name="status_listener_inactive">Permission needed to capture notifications</string>
+    <string name="btn_grant">Grant</string>
+    <string name="status_foreground_title">Foreground Service</string>
+    <string name="status_foreground_active">Running • Prevents background termination</string>
+    <string name="status_foreground_inactive">Paused • Tap switch to keep alive</string>
+    <string name="status_api_title">Google AI Studio API Key</string>
+    <string name="status_api_secured">Secured in EncryptedStorage</string>
+    <string name="status_api_missing">API Key missing • Add in Settings</string>
+    <string name="btn_config">Config</string>
+    <string name="btn_add_key">Add Key</string>
+    <string name="simulator_title">Interactive Notification Simulator</string>
+    <string name="simulator_desc">Simulate an incoming notification to test interception, blacklist filter, context tracking, and Gemini AI reply generation in real time.</string>
+    <string name="sim_app_label">Simulated App:</string>
+    <string name="sim_sender_label">Sender Name</string>
+    <string name="sim_message_label">Incoming Message Text</string>
+    <string name="sim_presets_label">Quick Test Presets:</string>
+    <string name="preset_work">Work Query</string>
+    <string name="preset_casual">Casual Sync</string>
+    <string name="preset_otp">Test Blacklist OTP</string>
+    <string name="btn_simulate">Simulate &amp; Generate Reply</string>
+    <string name="sim_querying_ai">Querying Gemini AI...</string>
+    <string name="activity_log_title">Live Activity &amp; Interception Log</string>
+    <string name="btn_clear">Clear</string>
+    <string name="log_empty_title">No notifications intercepted yet</string>
+    <string name="log_empty_desc">Use the simulator above or receive an actual notification.</string>
+    <string name="log_ai_reply_prefix">AI Reply: %1$s</string>
+    <string name="log_reason_prefix">Reason: %1$s</string>
+
+    <!-- Threads / Context -->
+    <string name="threads_empty_title">No Conversation History Yet</string>
+    <string name="threads_empty_desc">When messaging notifications are captured, their context and message threads will be saved here so Gemini can generate contextually aware responses.</string>
+    <string name="threads_title">Active Conversation Threads</string>
+    <string name="btn_delete">Delete</string>
+    <string name="thread_context_info">This thread history is supplied to Gemini API as context for smart replies.</string>
+
+    <!-- Blacklist -->
+    <string name="blacklist_card_title">Blacklist Word Filtering</string>
+    <string name="blacklist_card_desc">Notifications containing these words will be blocked immediately without sending queries to the AI, protecting sensitive information like OTPs, passwords, and banking alerts.</string>
+    <string name="blacklist_add_title">Add Unwanted Keyword / Phrase</string>
+    <string name="blacklist_word_label">Word or Phrase (e.g. \'confidential\')</string>
+    <string name="blacklist_case_sensitive">Case-sensitive match</string>
+    <string name="btn_add">Add</string>
+    <string name="blacklist_test_title">Test Filter Against Message</string>
+    <string name="blacklist_test_placeholder">Type test sentence (e.g. \'Your OTP code is...\')</string>
+    <string name="blacklist_configured_title">Configured Blacklist Keywords</string>
+    <string name="case_sensitive_desc">Case-sensitive match</string>
+    <string name="case_insensitive_desc">Case-insensitive match</string>
+
+    <!-- AI Config -->
+    <string name="ai_config_card_title">Structured Prompts &amp; AI Behavior</string>
+    <string name="ai_config_card_desc">Configure how Gemini drafts replies, sets tone, constrains answer length, and adapts to conversations.</string>
+    <string name="ai_persona_section">AI Persona / Tone</string>
+    <string name="persona_professional_desc">Polite, well-structured, clear grammar for work &amp; clients</string>
+    <string name="persona_casual_desc">Warm, friendly acquaintance tone with natural expressions</string>
+    <string name="persona_concise_desc">Direct 1-sentence answers without filler or pleasantries</string>
+    <string name="persona_support_desc">Empathetic, helpful problem-solver customer care tone</string>
+    <string name="persona_custom_desc">Define your own exact system instructions below</string>
+    <string name="custom_prompt_title">Custom System Instructions</string>
+    <string name="custom_prompt_desc">Provide explicit system instructions for how the AI should behave.</string>
+    <string name="reply_length_title">Response Length Constraint</string>
+    <string name="gemini_model_title">Gemini Model Engine</string>
+    <string name="output_prefs_title">Formatting &amp; Reply Mode</string>
+    <string name="include_prefix_title">Include \'[AI]\' Prefix in Replies</string>
+    <string name="include_prefix_desc">Transparency badge so recipients know the message was drafted by AI.</string>
+    <string name="auto_reply_title">Auto-Reply via RemoteInput</string>
+    <string name="auto_reply_desc">Automatically dispatch replies when supported. If disabled, replies are posted as reviewable notification suggestions.</string>
+
+    <!-- Settings -->
+    <string name="settings_auth_title">Google AI Studio Authentication</string>
+    <string name="settings_dynamic_key_title">Dynamic API Key Configuration</string>
+    <string name="settings_crypto_note">Stored in EncryptedSharedPreferences with hardware-backed AES256-GCM encryption.</string>
+    <string name="api_key_label">Gemini API Key</string>
+    <string name="btn_save_verify">Save &amp; Verify</string>
+    <string name="btn_clear_key">Clear</string>
+    <string name="connecting_gemini">Connecting to Gemini API...</string>
+    <string name="battery_section_title">Battery Optimization Strategy</string>
+    <string name="battery_exemption_title">Battery Exemption Status</string>
+    <string name="status_unrestricted">Unrestricted</string>
+    <string name="status_restricted">Restricted</string>
+    <string name="battery_unrestricted_desc">Android battery optimization is unrestricted. Background notification listener and keep-alive foreground services will run continuously without sleep interruption.</string>
+    <string name="battery_restricted_desc">App is subject to standard Android battery saver restrictions. System may sleep background services during screen off.</string>
+    <string name="btn_request_battery">Request Battery Optimization Exemption</string>
+    <string name="power_policy_title">Power Policy Mode:</string>
+    <string name="power_balanced">Balanced (Recommended)</string>
+    <string name="power_performance">High Performance (Zero Debounce)</string>
+    <string name="power_saver">Power Saver (Strict Batching)</string>
+    <string name="services_section_title">Services &amp; System Permissions</string>
+    <string name="notification_access_title">Notification Listener Access</string>
+    <string name="access_granted">Granted by system</string>
+    <string name="access_required">Requires user permission</string>
+    <string name="btn_manage">Manage</string>
+    <string name="btn_enable">Enable</string>
+    <string name="foreground_keepalive_title">Foreground Service Keep-Alive</string>
+    <string name="foreground_keepalive_desc">Maintains persistent process priority to avoid system kills.</string>
+
+    <!-- Help Activity -->
+    <string name="help_title">Application Guide &amp; Instructions</string>
+    <string name="help_subtitle">Comprehensive usage guide and tips for AI Reply Assist</string>
+    <string name="help_sec1_title">1. Initial Setup &amp; API Key</string>
+    <string name="help_sec1_body">To start using the app, navigate to the Settings tab and enter your Google AI Studio Gemini API key. Click \"Save &amp; Verify\" to validate connectivity. Your key is securely encrypted using hardware-backed AES256-GCM encryption.</string>
+    <string name="help_sec2_title">2. Notification Interception &amp; Quick Reply</string>
+    <string name="help_sec2_body">Enable the Notification Listener Service in Android Settings. When messages arrive from WhatsApp, Telegram, Google Messages, or Signal, the app intercepts them, tracks conversation context, and generates smart replies.</string>
+    <string name="help_sec3_title">3. Blacklist Filtering &amp; Privacy Shield</string>
+    <string name="help_sec3_body">The Blacklist automatically blocks sensitive incoming messages (e.g. OTPs, passwords, bank verification codes) from reaching the AI. You can add custom keywords and test phrases in the Blacklist tab.</string>
+    <string name="help_sec4_title">4. Background Execution &amp; Battery Saver</string>
+    <string name="help_sec4_body">Keep the Foreground Service enabled to prevent Android from closing the app. Request Battery Optimization Exemption in Settings for uninterrupted background performance.</string>
+    <string name="help_sec5_title">5. AI Personas &amp; Custom Prompts</string>
+    <string name="help_sec5_body">Configure your reply tone in the AI Behavior tab. Choose from Professional, Casual, Ultra Concise, Customer Support, or write your own custom system instructions.</string>
+    <string name="help_btn_close">Return to App</string>
+
+    <!-- Language Settings -->
+    <string name="language_section_title">App Language</string>
+    <string name="language_current_label">Current Language: %1$s</string>
+    <string name="btn_switch_language">Switch Language (العربية / English)</string>
+    <string name="lang_english">English</string>
+    <string name="lang_arabic">العربية (Arabic)</string>
+    <string name="settings_activity_title">Settings</string>
+
+    <!-- Quick Response Templates -->
+    <string name="templates_section_title">Quick Response Templates</string>
+    <string name="templates_section_desc">Pre-written automated replies for specific messaging apps when AI is disabled.</string>
+    <string name="ai_reply_toggle_title">AI Generated Replies</string>
+    <string name="ai_reply_toggle_desc">When disabled, pre-written templates below are used instead.</string>
+    <string name="btn_add_template">Add Template</string>
+    <string name="dialog_add_template_title">New Quick Response Template</string>
+    <string name="dialog_edit_template_title">Edit Response Template</string>
+    <string name="template_title_label">Template Title</string>
+    <string name="template_title_placeholder">e.g. In a meeting, Driving, Away</string>
+    <string name="template_target_app_label">Target Messaging App</string>
+    <string name="template_text_label">Pre-written Reply Message</string>
+    <string name="template_text_placeholder">e.g. I am currently busy and will get back to you shortly.</string>
+    <string name="btn_save_template">Save Template</string>
+    <string name="btn_cancel">Cancel</string>
+    <string name="all_apps">All Apps (*)</string>
+    <string name="no_templates_msg">No templates created yet. Click \'Add Template\' to define custom pre-written replies.</string>
+    <string name="template_status_active">Active for AI fallback</string>
+    <string name="template_status_disabled">Template disabled</string>
+
+    <!-- Stats & Analytics View -->
+    <string name="stats_title">7-Day Activity &amp; AI Analytics</string>
+    <string name="stats_subtitle">Notifications handled vs. total AI responses generated</string>
+    <string name="stats_notifications_handled">Notifications Handled</string>
+    <string name="stats_ai_responses">AI Responses Generated</string>
+    <string name="stats_response_rate">AI Automation Rate</string>
+    <string name="stats_view_recharts">Recharts Engine</string>
+    <string name="stats_view_native">Native Chart</string>
+    <string name="stats_no_data">No notification activity recorded yet</string>
+    <string name="stats_tap_to_inspect">Tap any day bar to view detailed metrics</string>
+    <string name="stats_total_7d">7-Day Total</string>
+</resources>

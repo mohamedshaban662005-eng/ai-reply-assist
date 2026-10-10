@@ -1,0 +1,6 @@
+{
+  "name": "AI Reply Assist",
+  "description": "Smart notification responder powered by Gemini AI with conversation context, blacklist filtering, and foreground service management.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

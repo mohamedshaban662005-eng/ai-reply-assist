@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">مساعد الرد الذكي</string>
+    <string name="notification_service_label">مراقب إشعارات الرد الذكي</string>
+    <string name="foreground_service_title">مساعد الرد الذكي قيد التشغيل</string>
+    <string name="foreground_service_desc">يراقب الإشعارات بنشاط وجاهز لتوليد ردود ذكية بالذكاء الاصطناعي.</string>
+
+    <!-- Navigation -->
+    <string name="nav_dashboard">الرئيسية</string>
+    <string name="nav_threads">المحادثات</string>
+    <string name="nav_blacklist">قائمة الحظر</string>
+    <string name="nav_ai_behavior">سلوك الذكاء</string>
+    <string name="nav_settings">الإعدادات</string>
+    <string name="nav_help">المساعدة</string>
+
+    <!-- Dashboard -->
+    <string name="dashboard_hero_subtitle">الخدمة نشطة في الخلفية</string>
+    <string name="section_system_services">حالة النظام والخدمات</string>
+    <string name="status_listener_title">خدمة الاستماع للإشعارات</string>
+    <string name="status_listener_active">نشط • يلتقط الرسائل الواردة</string>
+    <string name="status_listener_inactive">يلزم إذن لالتقاط الإشعارات</string>
+    <string name="btn_grant">منح الإذن</string>
+    <string name="status_foreground_title">الخدمة الأمامية</string>
+    <string name="status_foreground_active">قيد التشغيل • يمنع إيقاف النظام للتطبيق</string>
+    <string name="status_foreground_inactive">متوقف مؤقتاً • اضغط لتفعيل التشغيل الدائم</string>
+    <string name="status_api_title">مفتاح Google AI Studio API</string>
+    <string name="status_api_secured">محمي في وحدة التخزين المشفرة</string>
+    <string name="status_api_missing">المفتاح مفقود • أضفه في الإعدادات</string>
+    <string name="btn_config">تهيئة</string>
+    <string name="btn_add_key">إضافة مفتاح</string>
+    <string name="simulator_title">محاكي الإشعارات التفاعلي</string>
+    <string name="simulator_desc">قم بمحاكاة إشعار وارد لاختبار الاعتراض، وفلترة قائمة الحظر، وتتبع سياق المحادثة، وتوليد رد ذكي من Gemini في الوقت الفعلي.</string>
+    <string name="sim_app_label">التطبيق المحاكى:</string>
+    <string name="sim_sender_label">اسم المرسل</string>
+    <string name="sim_message_label">نص الرسالة الواردة</string>
+    <string name="sim_presets_label">نماذج اختبار سريعة:</string>
+    <string name="preset_work">استفسار عمل</string>
+    <string name="preset_casual">تواصل ودي</string>
+    <string name="preset_otp">اختبار حظر رمز التحقق OTP</string>
+    <string name="btn_simulate">محاكاة وتوليد الرد</string>
+    <string name="sim_querying_ai">جاري الاتصال بنموذج Gemini...</string>
+    <string name="activity_log_title">سجل النشاط واعتراض الإشعارات</string>
+    <string name="btn_clear">مسح</string>
+    <string name="log_empty_title">لم يتم اعتراض أي إشعارات بعد</string>
+    <string name="log_empty_desc">استخدم المحاكي أعلاه أو استقبل إشعاراً حقيقياً.</string>
+    <string name="log_ai_reply_prefix">رد الذكاء الاصطناعي: %1$s</string>
+    <string name="log_reason_prefix">السبب: %1$s</string>
+
+    <!-- Threads / Context -->
+    <string name="threads_empty_title">لا يوجد سجل محادثات حتى الآن</string>
+    <string name="threads_empty_desc">عند التقاط إشعارات المراسلة، سيتم حفظ سياقها وسجل رسائلها هنا لتمكين Gemini من توليد ردود متناسقة مع سياق الحوار.</string>
+    <string name="threads_title">المحادثات النشطة</string>
+    <string name="btn_delete">حذف</string>
+    <string name="thread_context_info">يتم تزويد سجل هذه المحادثة إلى واجهة برمجة تطبيقات Gemini كسياق للردود الذكية.</string>
+
+    <!-- Blacklist -->
+    <string name="blacklist_card_title">فلترة الكلمات المحظورة</string>
+    <string name="blacklist_card_desc">سيتم حظر الإشعارات التي تحتوي على هذه الكلمات فوراً دون إرسال أي استفسارات إلى الذكاء الاصطناعي، مما يحمي المعلومات الحساسة مثل رموز OTP وكلمات المرور والتنبيهات البنكية.</string>
+    <string name="blacklist_add_title">إضافة كلمة أو عبارة غير مرغوبة</string>
+    <string name="blacklist_word_label">الكلمة أو العبارة (مثال: \'سري\')</string>
+    <string name="blacklist_case_sensitive">مطابقة حساسة لحالة الأحرف</string>
+    <string name="btn_add">إضافة</string>
+    <string name="blacklist_test_title">اختبار الفلتر مع رسالة تجريبية</string>
+    <string name="blacklist_test_placeholder">اكتب جملة تجريبية (مثال: \'رمز التحقق الخاص بك هو...\')</string>
+    <string name="blacklist_configured_title">الكلمات المحظورة المحددة</string>
+    <string name="case_sensitive_desc">مطابقة حساسة لحالة الأحرف</string>
+    <string name="case_insensitive_desc">مطابقة غير حساسة لحالة الأحرف</string>
+
+    <!-- AI Config -->
+    <string name="ai_config_card_title">المطالبات المهيكلة وسلوك الذكاء الاصطناعي</string>
+    <string name="ai_config_card_desc">تخصيص أسلوب صياغة الردود، وتحديد نبرة الصوت، والتحكم في طول الإجابات وتكيفها مع سياق المحادثة.</string>
+    <string name="ai_persona_section">شخصية الذكاء الاصطناعي / نبرة الصوت</string>
+    <string name="persona_professional_desc">مهذب، منظم، وقواعد لغوية سليمة للعمل والعملاء</string>
+    <string name="persona_casual_desc">ودود وتلقائي مع تعبيرات عفوية للمحادثات اليومية</string>
+    <string name="persona_concise_desc">إجابات مباشرة ومختصرة في جملة واحدة دون حشو</string>
+    <string name="persona_support_desc">متعاطف وموجه لحل المشكلات بأسلوب خدمة العملاء</string>
+    <string name="persona_custom_desc">حدد تعليمات النظام المخصصة الخاصة بك بالأسفل</string>
+    <string name="custom_prompt_title">تعليمات النظام المخصصة</string>
+    <string name="custom_prompt_desc">اكتب تعليمات صريحة لكيفية تصرف الذكاء الاصطناعي في الردود.</string>
+    <string name="reply_length_title">التحكم في طول الإجابة</string>
+    <string name="gemini_model_title">محرك نموذج Gemini</string>
+    <string name="output_prefs_title">التنسيق ووضع الرد</string>
+    <string name="include_prefix_title">إضافة بادئة \'[AI]\' في الردود</string>
+    <string name="include_prefix_desc">شارة شفافية ليعرف المستلم أن الرد تمت صياغته بواسطة الذكاء الاصطناعي.</string>
+    <string name="auto_reply_title">الرد التلقائي عبر RemoteInput</string>
+    <string name="auto_reply_desc">إرسال الردود تلقائياً عند دعم ذلك. في حالة التعطيل، تعرض الردود كاقتراحات للمراجعة في الإشعارات.</string>
+
+    <!-- Settings -->
+    <string name="settings_auth_title">المصادقة مع Google AI Studio</string>
+    <string name="settings_dynamic_key_title">التهيئة الديناميكية لمفتاح API</string>
+    <string name="settings_crypto_note">مخزن في EncryptedSharedPreferences بتشفير AES256-GCM المدعوم بالعتاد.</string>
+    <string name="api_key_label">مفتاح Gemini API</string>
+    <string name="btn_save_verify">حفظ والتحقق</string>
+    <string name="btn_clear_key">مسح</string>
+    <string name="connecting_gemini">جاري الاتصال بـ Gemini API...</string>
+    <string name="battery_section_title">استراتيجية تحسين استهلاك البطارية</string>
+    <string name="battery_exemption_title">حالة استثناء تحسين البطارية</string>
+    <string name="status_unrestricted">غير مقيد</string>
+    <string name="status_restricted">مقيد</string>
+    <string name="battery_unrestricted_desc">تحسين بطارية أندرويد غير مقيد. ستعمل خدمة مراقبة الإشعارات والخدمة الأمامية بشكل مستمر دون توقف في وضع السكون.</string>
+    <string name="battery_restricted_desc">التطبيق يخضع لقيود توفير البطارية القياسية. قد يقوم النظام بإيقاف خدمات الخلفية أثناء إيقاف تشغيل الشاشة.</string>
+    <string name="btn_request_battery">طلب استثناء من تحسين استهلاك البطارية</string>
+    <string name="power_policy_title">نمط سياسة استهلاك الطاقة:</string>
+    <string name="power_balanced">متوازن (موصى به)</string>
+    <string name="power_performance">أداء عالي (استجابة فورية)</string>
+    <string name="power_saver">توفير الطاقة (معالجة مجمعة)</string>
+    <string name="services_section_title">الخدمات وأذونات النظام</string>
+    <string name="notification_access_title">إذن الوصول للإشعارات</string>
+    <string name="access_granted">ممنوح من النظام</string>
+    <string name="access_required">يتطلب إذن المستخدم</string>
+    <string name="btn_manage">إدارة</string>
+    <string name="btn_enable">تفعيل</string>
+    <string name="foreground_keepalive_title">الحفاظ على تشغيل الخدمة الأمامية</string>
+    <string name="foreground_keepalive_desc">يحافظ على أولوية العملية لمنع النظام من إيقاف التطبيق.</string>
+
+    <!-- Help Activity -->
+    <string name="help_title">دليل وإرشادات التطبيق</string>
+    <string name="help_subtitle">دليل شامل لاستخدام وتخصيص مساعد الرد الذكي</string>
+    <string name="help_sec1_title">١. الإعداد الأولي ومفتاح API</string>
+    <string name="help_sec1_body">لبدء استخدام التطبيق، انتقل إلى علامة تبويب الإعدادات وأدخل مفتاح Google AI Studio Gemini API الخاص بك. اضغط على \"حفظ والتحقق\" للتأكد من الاتصال. يتم تشفير مفتاحك بشكل آمن باستخدام تشفير AES256-GCM المدعوم بعتاد الجهاز.</string>
+    <string name="help_sec2_title">٢. اعتراض الإشعارات والرد السريع</string>
+    <string name="help_sec2_body">قم بتفعيل خدمة الاستماع للإشعارات في إعدادات أندرويد. عند وصول رسائل من واتساب، تيليجرام، رسائل جوجل، أو سيجنال، يقوم التطبيق باعتراضها، وتتبع سياق المحادثة، وتوليد ردود ذكية مناسبة.</string>
+    <string name="help_sec3_title">٣. فلترة قائمة الحظر ودرع الخصوصية</string>
+    <string name="help_sec3_body">تقوم قائمة الحظر بحظر الرسائل الحساسة الواردة تلقائياً (مثل رموز التحقق OTP، وكلمات المرور، والرموز البنكية) ومنع إرسالها للذكاء الاصطناعي. يمكنك إضافة كلمات مفتاحية مخصصة واختبار العبارات في تبويب قائمة الحظر.</string>
+    <string name="help_sec4_title">٤. التشغيل بالخلفية وتوفير البطارية</string>
+    <string name="help_sec4_body">أبقِ الخدمة الأمامية مفعلة لمنع أندرويد من إيقاف التطبيق. اطلب استثناء تحسين البطارية في الإعدادات للحصول على أداء خلفي سلس ومستمر.</string>
+    <string name="help_sec5_title">٥. شخصيات الذكاء الاصطناعي والمطالبات المخصصة</string>
+    <string name="help_sec5_body">خصص نبرة الرد في تبويب سلوك الذكاء. اختر من بين الأسلوب المهني، أو الودي، أو فائق الاختصار، أو دعم العملاء، أو اكتب تعليمات النظام المخصصة الخاصة بك.</string>
+    <string name="help_btn_close">العودة إلى التطبيق</string>
+
+    <!-- Language Settings -->
+    <string name="language_section_title">لغة التطبيق</string>
+    <string name="language_current_label">اللغة الحالية: %1$s</string>
+    <string name="btn_switch_language">تغيير لغة التطبيق (English / العربية)</string>
+    <string name="lang_english">English (الإنجليزية)</string>
+    <string name="lang_arabic">العربية</string>
+    <string name="settings_activity_title">الإعدادات</string>
+
+    <!-- Quick Response Templates -->
+    <string name="templates_section_title">قوالب الرد السريع</string>
+    <string name="templates_section_desc">ردود مجهزة مسبقاً لتطبيقات المراسلة المحددة عند تعطيل الرد بالذكاء الاصطناعي.</string>
+    <string name="ai_reply_toggle_title">الردود المعتمدة على الذكاء الاصطناعي</string>
+    <string name="ai_reply_toggle_desc">عند التعطيل، يتم استخدام القوالب المكتوبة مسبقاً أدناه بدلاً من ذلك.</string>
+    <string name="btn_add_template">إضافة قالب</string>
+    <string name="dialog_add_template_title">قالب رد سريع جديد</string>
+    <string name="dialog_edit_template_title">تعديل قالب الرد</string>
+    <string name="template_title_label">عنوان القالب</string>
+    <string name="template_title_placeholder">مثال: في اجتماع، أقود السيارة، غير متاح</string>
+    <string name="template_target_app_label">تطبيق المراسلة المستهدف</string>
+    <string name="template_text_label">نص الرد المكتوب مسبقاً</string>
+    <string name="template_text_placeholder">مثال: أنا مشغول حالياً وسأقوم بالرد عليك في أقرب وقت.</string>
+    <string name="btn_save_template">حفظ القالب</string>
+    <string name="btn_cancel">إلغاء</string>
+    <string name="all_apps">جميع التطبيقات (*)</string>
+    <string name="no_templates_msg">لا توجد قوالب حتى الآن. اضغط على \'إضافة قالب\' لتحديد ردود مسبقة الصنع.</string>
+    <string name="template_status_active">مفعل كبديل للذكاء الاصطناعي</string>
+    <string name="template_status_disabled">القالب معطل</string>
+
+    <!-- Stats & Analytics View -->
+    <string name="stats_title">نشاط آخر 7 أيام وإحصاءات الذكاء الاصطناعي</string>
+    <string name="stats_subtitle">الإشعارات المعالجة مقابل إجمالي ردود الذكاء الاصطناعي</string>
+    <string name="stats_notifications_handled">الإشعارات المعالجة</string>
+    <string name="stats_ai_responses">ردود الذكاء الاصطناعي</string>
+    <string name="stats_response_rate">نسبة الأتمتة بالذكاء الاصطناعي</string>
+    <string name="stats_view_recharts">محرك Recharts</string>
+    <string name="stats_view_native">مخطط أصلي</string>
+    <string name="stats_no_data">لم يتم تسجيل أي نشاط إشعارات حتى الآن</string>
+    <string name="stats_tap_to_inspect">انقر فوق أي عمود لعرض تفاصيل اليوم</string>
+    <string name="stats_total_7d">إجمالي 7 أيام</string>
+</resources>
